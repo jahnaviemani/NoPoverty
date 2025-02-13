@@ -1,0 +1,63 @@
+/* Default background for all pages */
+body {
+    background-image: url('https://t4.ftcdn.net/jpg/03/10/66/99/360_F_310669969_oL6qi7KIutIelrElIUwat0dwsWyF6hyk.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Special black background for scheme pages */
+.scheme-page {
+    background: black;
+    color: white;
+}
+
+/* White content box with black text */
+.content-box {
+    background: white;
+    color: black;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+}
+
+/* Style for scheme images */
+.scheme-image {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Table styles */
+.scheme-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.scheme-table, .scheme-table th, .scheme-table td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+.scheme-table th {
+    background-color: grey;
+}
+
+/* Read More button */
+.button {
+    display: inline-block;
+    background-color: #ff4500;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}

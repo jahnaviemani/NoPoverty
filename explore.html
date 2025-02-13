@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - No Poverty</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 50px;
+        }
+
+        .box {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+        }
+
+        .box h2 {
+            margin-bottom: 15px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: red;
+        }
+
+        /* Hidden sections */
+        .hidden {
+            display: none;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+        }
+
+        .schemes-list, .apps-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .schemes-list a, .apps-list a {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            width: 80%;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .schemes-list a:hover, .apps-list a:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Explore Schemes & Apps</h1>
+
+    <div class="container">
+        <div class="box" onclick="toggleSection('schemes')">
+            <h2>Poverty Reduction Schemes</h2>
+            <p>Learn about various schemes that represent successful poverty alleviation programs from different parts of the world, showcasing diverse approaches.</p>
+        </div>
+
+        <div class="box" onclick="toggleSection('apps')">
+            <h2>Mobile Apps for Support</h2>
+            <p>Check out apps that help people fight poverty and gain assistance.</p>
+        </div>
+    </div>
+
+    <!-- Schemes Section -->
+    <div id="schemes" class="hidden">
+        <h2>Poverty Alleviation Schemes</h2>
+        <div class="schemes-list">
+            <a href="scheme1.html">Universal Credit - UK</a>
+            <a href="scheme2.html">Karnataka, India – ELEVATE Unnati Program</a>
+            <a href="scheme3.html">California, USA – CalWORKs (California Work Opportunity and Responsibility to Kids)</a>
+            <a href="scheme4.html">Brazil - Bolsa Família Program</a>
+            <a href="scheme5.html">Tamil Nadu, Inida -Amma Two Wheeler Scheme</a>
+        </div>
+    </div>
+
+    <!-- Apps Section -->
+    <div id="apps" class="hidden">
+        <h2>Apps Supporting No Poverty</h2>
+        <div class="apps-list">
+            <a href="https://apps.apple.com/us/app/compassion/id384410347" target="_blank">To sponsor a child in need of aid</a>
+            <a href="https://play.google.com/store/apps/details?id=app.shg.tnulm&hl=en" target="_blank">TNULM SHG App</a>
+            <a href="https://apps.apple.com/us/app/sharethemeal-charity-donate/id977130010" target="_blank">Share the Meal</a>
+            <a href="https://www.charidy.app/?utm_source=Master%20Organization%20List&utm_campaign=5510c2d64c-EMAIL_CAMPAIGN_2018_12_31_10_07&utm_medium=email&utm_term=0_a565dfb434-5510c2d64c-274809097" target="_blank">Powerful Online Fundraising Starts Here</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            var schemes = document.getElementById("schemes");
+            var apps = document.getElementById("apps");
+
+            if (sectionId === "schemes") {
+                schemes.style.display = "block";
+                apps.style.display = "none";
+            } else {
+                schemes.style.display = "none";
+                apps.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
